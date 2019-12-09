@@ -3,14 +3,13 @@
 * {
     box-sizing: border-box;
     padding: 0 auto;
-    margin: 0;
-    border: 10px dotted blue;
+    margin: 1%;
+    border:0;
     font: inherit;
     max-width: 100%;
-    font-size: 40px;
+    font-size: 100%;
     vertical-align: baseline;
     text-align: center;
-    background-color: #2F2F31;
     }
     
     html,
