@@ -1,3 +1,161 @@
+/* Universal Selector Reset */
+
+* {
+    box-sizing: border-box;
+    padding: 0 auto;
+    margin: 0;
+    border: 10px dotted blue;
+    font: inherit;
+    max-width: 100%;
+    font-size: 40px;
+    vertical-align: baseline;
+    text-align: center;
+    background-color: #2F2F31;
+    }
+    
+    html,
+    body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    }
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* Nav */
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 3% auto;
+}
+
+nav a {
+    color: grey;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+}
+
+
+/* top */
+
+.start {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 70%;
+}
+
+#innovation {
+    margin-top: 3%;
+}
+
+#innovation h1 {
+    font-size: 80px;
+}
+
+.top #innovation {
+    text-align: center;
+}
+
+.top #innovation button {
+    border: 1px solid black;
+    background: white;
+    font-size: 30px;
+    padding: 0 15%;
+}
+
+
+/* Features and About */
+
+.twoCont {
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+}
+
+.twoCont div {
+    text-align: left;
+}
+
+
+/* Code Picture */
+
+.middle-img {
+    width: 100%;
+}
+
+
+/*Services, Product, Vision */
+
+.threeCont {
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+}
+
+.threeCont div {
+    text-align: left;
+}
+
+
+/* Footer and Contact */
+
+footer {
+    margin-top: 10%;
+}
+
+address a {
+    margin-left: -0.1%;
+}
+
+address {
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+h6 {
+    text-align: center;
+}
+
+
+/* SERVICES CSS STARTS HERE */
+
+.services-header-img {
+    width: 100%;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.skills div {
+    border: 1px solid black;
+    width: 45%;
+    background: lightgrey;
+}
+
+.serviceFoot {
+    display: flex;
+    justify-content: space-around;
+}
+
+.serviceFoot div {
+    width: 50%;
+}
