@@ -1,3 +1,195 @@
+/* Universal Selector Reset */
+
+* {
+  box-sizing: border-box;
+  padding: 0 auto;
+  margin: 1%;
+  border: 0;
+  font: inherit;
+  max-width: 100%;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* Nav */
 
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 3% auto;
+}
+
+nav a {
+  color: grey;
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+}
+
+/* top */
+
+.start {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 70%;
+}
+
+#innovation {
+  /* I quit. its just not gonna be centered*/
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  /*i dont have the patience for this today*/
+  margin-top: 3%;
+}
+
+#innovation h1 {
+  font-size: 80px;
+}
+
+.top #innovation button {
+  border: 1px solid black;
+  background: white;
+  font-size: 30px;
+  padding: 0 15%;
+}
+
+/* Features and About */
+
+.twoCont {
+  width: 100%;
+  display: flex;
+  font-size: 25px;
+}
+
+.twoCont div {
+  text-align: left;
+}
+
+/* Code Picture */
+
+.middle-img {
+  width: 100%;
+}
+
+/*Services, Product, Vision */
+
+.threeCont {
+  width: 100%;
+  display: flex;
+  font-size: 25px;
+}
+
+.threeCont div {
+  text-align: left;
+}
+
+/* Footer and Contact */
+
+footer {
+  margin-top: 10%;
+}
+
+address a {
+  margin-left: -0.1%;
+}
+
+address {
+  border: 1px solid blue;
+  text-align: left;
+  margin-top: 5%;
+  font-size: 25px;
+}
+
+address h2 {
+  text-align: left;
+}
+
+h6 {
+  text-align: center;
+}
+
+/* SERVICES CSS STARTS HERE */
+
+.services-header-img {
+  width: 100%;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.skills div {
+  border: 1px solid black;
+  width: 45%;
+  background: lightgrey;
+}
+
+.serviceFoot {
+  display: flex;
+  justify-content: space-around;
+}
+
+.serviceFoot div {
+  width: 50%;
+}
+
+/* Media Queries*/
+
+@media (max-width: 834px) {
+  .start img {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  nav a {
+    border-bottom: 1px solid black;
+  }
+  .logo {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .twoCont {
+    flex-wrap: wrap;
+  }
+  .threeCont {
+    flex-wrap: wrap;
+  }
+}
