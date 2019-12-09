@@ -27,6 +27,7 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 /* Nav */
@@ -58,15 +59,17 @@ nav a {
 }
 
 #innovation {
+  /* I quit. its just not gonna be centered*/
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  /*i dont have the patience for this today*/
   margin-top: 3%;
 }
 
 #innovation h1 {
   font-size: 80px;
-}
-
-.top #innovation {
-  text-align: center;
 }
 
 .top #innovation button {
@@ -117,14 +120,14 @@ address a {
 }
 
 address {
-    border: 1px solid blue;
-    text-align: left;
+  border: 1px solid blue;
+  text-align: left;
   margin-top: 5%;
   font-size: 25px;
 }
 
-address h2{
-    text-align: left;
+address h2 {
+  text-align: left;
 }
 
 h6 {
@@ -157,4 +160,36 @@ h6 {
 
 .serviceFoot div {
   width: 50%;
+}
+
+/* Media Queries*/
+
+@media (max-width: 834px) {
+  .start img {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  nav a {
+    border-bottom: 1px solid black;
+  }
+  .logo {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .twoCont {
+    flex-wrap: wrap;
+  }
+  .threeCont {
+    flex-wrap: wrap;
+  }
 }
