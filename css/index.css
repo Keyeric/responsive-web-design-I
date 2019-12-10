@@ -32,20 +32,25 @@ h5 {
 
 /* Nav */
 
-nav {
+.top {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   width: 100%;
   margin: 3% auto;
+}
+nav{
+  width:75%;
 }
 
 nav a {
   color: grey;
   text-decoration: none;
+  margin: 3%;
+  
 }
 
-.logo {
+.divLogo {
+  width:20%;
   display: flex;
 }
 
@@ -72,7 +77,7 @@ nav a {
   font-size: 80px;
 }
 
-.top #innovation button {
+#innovation button {
   border: 1px solid black;
   background: white;
   font-size: 30px;
@@ -120,7 +125,6 @@ address a {
 }
 
 address {
-  border: 1px solid blue;
   text-align: left;
   margin-top: 5%;
   font-size: 25px;
@@ -168,28 +172,33 @@ h6 {
   .start img {
     display: none;
   }
-  .logo {
-    display: none;
+  .top{
+    align-items: center;
+    flex-direction:column-reverse;
   }
+nav {
+  align-items:center;
 }
 
 @media (max-width: 414px) {
+
+  .top{
+    align-items: center;
+    flex-direction:column-reverse;
+  }
   nav {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center:
   }
   nav a {
     border-bottom: 1px solid black;
+    width: 100%;
   }
   .logo {
-    width: 30%;
+    width: 100%;
     margin: 0 auto;
   }
-  .twoCont {
+  .twoCont, .threeCont {
     flex-wrap: wrap;
   }
-  .threeCont {
-    flex-wrap: wrap;
-  }
-}
